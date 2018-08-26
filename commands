@@ -1,0 +1,16 @@
+$ git config --global color.ui auto			==>	For coloring
+$ git clone https://github.com/udacity/asteroids.git	==>	Clone a repo, i.e. files with their history
+$ git log --stat					==>	See commit history and how many lines were inserted / deleted and each message.
+$ git checkout <commit id>				==>	Move the HEAD to a certain commit so it is the most recent in $ git log.
+$ git reflog						==>	See the different movement of HEAD, i.e. the checkouts that were made.
+$ git diff <old> <new>					==>	Compare two commits with the old logically coming first.
+$ git init						==>	Inialize a repo with zero commit.
+$ git status						==>	Show repo status.
+$ git add <regex>					==>	Add files / directories to the staging aread for further committing.
+$ git branch						==>	Show current branches.
+$ git branch <branch name>				==>	Create new branch. 
+$ git checkout <branch name>				==>	Move to the tip of that branch.
+$ git remote						==>	See git remotes.
+$ git remote -v						==>	See git remotes with verbosity, i.e. fetch and pull links.
+$ git remote add <remote name> <remote link.git>	==>	Add remote repo with a name and a link to perform pull and push actions.
+$ git push <remote name> <branch name>			==>	Push local repo commits to the remote.	
