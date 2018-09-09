@@ -13,4 +13,5 @@ $ git checkout <branch name>				==>	Move to the tip of that branch.
 $ git remote						==>	See git remotes.
 $ git remote -v						==>	See git remotes with verbosity, i.e. fetch and pull links.
 $ git remote add <remote name> <remote link.git>	==>	Add remote repo with a name and a link to perform pull and push actions.
-$ git push <remote name> <branch name>			==>	Push local repo commits to the remote.	
+$ git push <remote name> <branch name>			==>	Push local repo commits to the remote if they were not sent yet.	
+$ git pull <remote name> <branch name>			==>	Pull remote repo commits which were not received yet.
