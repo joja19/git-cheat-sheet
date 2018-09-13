@@ -1,17 +1,32 @@
-$ git config --global color.ui auto			==>	For coloring
-$ git clone https://github.com/udacity/asteroids.git	==>	Clone a repo, i.e. files with their history
-$ git log --stat					==>	See commit history and how many lines were inserted / deleted and each message.
+commands
+========
+$ git reset --hard					==>	Reset any changes in both staging area and working dir.
+$ git config --global color.ui auto			==>	For coloring.
+$ git config --global user.name "Your Username"		==>	Set your local repos username machine-wide.
+$ git diff						==>	Compare the working directory with the staging area.
+$ git diff --staged					==>	Compare the staging area with the repo.
+$ git diff <old commit> <new commit>			==>	Compare two commits with the old logically coming first.
+$ git checkout <commit id>				==>	Start working from this commit, i.e. make it the tip.
 $ git checkout <commit id>				==>	Move the HEAD to a certain commit so it is the most recent in $ git log.
+$ git checkout <branch name>				==>	Switch to the tip of this local branch so all changes apply only to it. 
+$ git checkout -b <new branch name>			==>	Create a new branch and check it out in a single step.
+$ git checkout -t <remote name>/<remote brnch>		==>	Create a new local branch set to track remote branch both having the same name. 
+$ git branch 						==>	Show local branches of this repo.
+$ git branch <branch name>  				==>	Create a new branch.
 $ git reflog						==>	See the different movement of HEAD, i.e. the checkouts that were made.
-$ git diff <old> <new>					==>	Compare two commits with the old logically coming first.
+$ git log --graph --oneline <master> <other branch>	==>	Draw a graph showing commits on two branches with the first being the main branch.
+$ git log --stat					==>	See commit history and how many lines were inserted / deleted and each message.
+$ git clone https://github.com/udacity/asteroids.git	==>	Clone a repo, i.e. files with their history.
 $ git init						==>	Inialize a repo with zero commit.
 $ git status						==>	Show repo status.
-$ git add <regex>					==>	Add files / directories to the staging aread for further committing.
-$ git branch						==>	Show current branches.
-$ git branch <branch name>				==>	Create new branch. 
-$ git checkout <branch name>				==>	Move to the tip of that branch.
+$ git add <regex>					==>	Add files / directories to the staging area for further committing.
+$ git commit -m <"Message Text">			==>	Commit the changes added to the staging area with a clear message.
 $ git remote						==>	See git remotes.
 $ git remote -v						==>	See git remotes with verbosity, i.e. fetch and pull links.
 $ git remote add <remote name> <remote link.git>	==>	Add remote repo with a name and a link to perform pull and push actions.
-$ git push <remote name> <branch name>			==>	Push local repo commits to the remote if they were not sent yet.	
-$ git pull <remote name> <branch name>			==>	Pull remote repo commits which were not received yet.
+$ git remote remove <remote name>			==>	Remove remote repo with that name.
+$ git push <remote name> <branch name>			==>	Push local repo commits to the remote if they were not sent yet, i.e. update remote.	
+$ git pull <remote name> <branch name>			==>	Pull remote repo commits which were not received yet, i.e. update your local repo.
+$ git merge <branch name>				==>	Merge local <branch name> into the local checkedout branch.
+$ git merge <master> <branch name>			==>	Merge local <branch name> into the local master.
+$ git merge --abort					==>	Cancel merge if there is a conflict.
