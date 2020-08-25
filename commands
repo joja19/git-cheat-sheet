@@ -30,3 +30,4 @@ $ git pull <remote name> <branch name>			==>	Pull remote repo commits which were
 $ git merge <branch name>				==>	Merge local <branch name> into the local checkedout branch.
 $ git merge <master> <branch name>			==>	Merge local <branch name> into the local master.
 $ git merge --abort					==>	Cancel merge if there is a conflict.
+$ git format-patch -1 <commit hash>       ==>   Create a patch to use it locally. 
